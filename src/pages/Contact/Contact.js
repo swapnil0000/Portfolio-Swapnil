@@ -1,6 +1,6 @@
 import { Box, Button, Container, TextField, Typography, useMediaQuery, useTheme } from '@mui/material'
 import React, { useState } from 'react'
-import "../icons.css"
+import "../Home/icons.css"
 import contact from "../Contact/contacts.jpg"
 
 const Contact = () => {

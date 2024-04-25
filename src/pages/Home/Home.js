@@ -1,6 +1,5 @@
 import { Box, Container } from '@mui/material'
 import React from 'react'
-import Banner from '../Banner'
 import About from '../About/About'
 import Skills from '../skills/Skills'
 import Project from '../Projects/Project'
@@ -10,6 +9,7 @@ import "../Home/homeStyle.css"
 import HomeContact from './HomeContact'
 import HomeSkills from './HomeSkills'
 import HomeProject from './HomeProject'
+import Banner from './Banner'
 
 const Home = () => {
   return (

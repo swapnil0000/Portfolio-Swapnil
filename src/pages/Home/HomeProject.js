@@ -1,16 +1,13 @@
 import { Box, Grid, Paper, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react';
-import project1 from "../Projects/p1.png";
-import project2 from "../Projects/p2.png";
-import project3 from "../Projects/3.png";
-import project4 from "../Projects/p4.png";
+
 import { useNavigate } from 'react-router-dom';
 
 const projects = [
-  { image: project1, title: "Project 1" , path:"/projects"},
-  { image: project2, title: "Project 2",path:"/projects" },
-  { image: project3, title: "Project 3",path:"projects" },
-  { image: project4, title: "Project 4" ,path:'/projects'},
+  { image: "/assets/p1.png", title: "Project 1" , path:"/projects"},
+  { image: "/assets/p2.png", title: "Project 2",path:"/projects" },
+  { image: "/assets/p3.png", title: "Project 3",path:"projects" },
+  { image: "/assets/p4.png", title: "Project 4" ,path:'/projects'},
 ];
 
 const HomeProject = () => {

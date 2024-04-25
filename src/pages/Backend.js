@@ -1,11 +1,6 @@
 import { Box, Grid, Paper, Typography } from '@mui/material'
 import React from 'react'
-import node from "../pages/node.jpg"
-import express from "../pages/express.png"
-import c from "../pages/c++.jpg"
-import javaascript from "../pages/jsbackend.jpg"
-import respo from "../pages/responsive.png"
-import material from "../pages/materail.png"
+
 
 
 
@@ -13,21 +8,21 @@ const Frontend = () => {
     const data=[
         {
             id:1,
-            img:node,
+            img:"/assets/node.webp",
             val:"HTML5"
         },
         {
             id:2,
-            img:express,
+            img:"/assets/express.webp",
             val:"CSS3"
         },{
             id:3,
-            img:c,
-            val:"Javascript"
+            img:"/assets/c++.webp",
+            val:"/assets/c++.jpg"
         },{
             id:4,
-            img:javaascript,
-            val:"React"
+            img:"/assets/jsbackend.webp",
+            val:"/assets/jsbackend.jpg"
         },
     ]
   return (

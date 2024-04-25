@@ -1,6 +1,6 @@
 import { Box, Typography, useMediaQuery, useTheme } from '@mui/material'
 import React from 'react'
-import "../icons.css"
+import "../Home/icons.css"
 const HomeContact = () => {
   const theme=useTheme();
   const isMobileView=useMediaQuery(theme.breakpoints.down("md"))

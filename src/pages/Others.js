@@ -1,11 +1,6 @@
 import { Box, Grid, Paper, Typography } from '@mui/material'
 import React from 'react'
-import aws from "../pages/aws.png"
-import firebase from "../pages/firebase.png"
-import opti from "../pages/opti.png"
-import seo from "../pages/seo.jpg"
-import testing from "../pages/testing.jpg"
-import dsa from "../pages/dsa.png"
+
 
 
 
@@ -13,35 +8,35 @@ const Frontend = () => {
     const data=[
         {
             id:1,
-            img:aws,
+            img:"/assets/aws.webp",
             val:"HTML5"
         },
         {
             id:2,
-            img:firebase,
+            img:"/assets/firebase.webp",
             val:"CSS3"
         },{
             id:3,
-            img:opti,
+            img:"/assets/opti.webp",
             val:"Javascript"
         },{
             id:4,
-            img:seo,
+            img:"/assets/seo.webp",
             val:"React"
         },
         {
             id:5,
-            img:testing,
+            img:"/assets/testing.webp",
             val:"MaterialUI"
         },{
             id:6,
-            img:dsa,
+            img:"/assets/dsa.webp",
             val:"Responsiveness"
         },
     ]
   return (
     <Box sx={{marginTop:'60px'}}>
-     <Typography  sx={{ color: 'white', fontSize: '50px', textAlign: 'center' }}>Frontend Skills</Typography>
+     <Typography  sx={{ color: 'white', fontSize: '50px', textAlign: 'center' }}>Other Skills</Typography>
     <Grid container>
     {data.map(item => (
       <Grid key={item.id} item xs={12} sm={6} md={6} lg={4} sx={{display:'flex',flexDirection:'column',alignItems:'center',marginTop:'10px'}}>

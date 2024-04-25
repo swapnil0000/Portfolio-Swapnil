@@ -1,15 +1,12 @@
 import { Box, Grid, Paper, Typography } from '@mui/material';
 import React from 'react';
-import project1 from "../Projects/p1.png";
-import project2 from "../Projects/p2.png";
-import project3 from "../Projects/3.png";
-import project4 from "../Projects/p4.png";
+
 
 const projects = [
-  { image: project1, title: "Project 1" },
-  { image: project2, title: "Project 2" },
-  { image: project3, title: "Project 3" },
-  { image: project4, title: "Project 4" },
+  { image: "/assets/p1.png", title: "Project 1" },
+  { image: "/assets/p2.png", title: "Project 2" },
+  { image: "/assets/p3.png", title: "Project 3" },
+  { image: "/assets/p4.png", title: "Project 4" },
 ];
 
 const Project = () => {

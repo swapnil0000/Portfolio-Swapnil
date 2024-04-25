@@ -1,10 +1,8 @@
 import { Box, Container, Typography, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react';
 import about from "../About/aboutpage.jpg";
-import back from "../About/backgroundabout.jpeg";
 import { useNavigate } from 'react-router-dom';
 import CallIcon from '@mui/icons-material/Call';
-import EmailIcon from '@mui/icons-material/Email';
 
 const About = () => {
     const navigate = useNavigate();
