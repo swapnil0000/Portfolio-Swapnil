@@ -9,7 +9,7 @@ const Skills = () => {
   const isMobileView=useMediaQuery(theme.breakpoints.down("md"))
   return (
     <Container sx={{marginTop:'60px',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center ',width:'100%'}}>
-    <Typography sx={{ color: 'white', fontSize: '50px',display:'flex',alignItems:'center',justifyContent:'center' }}>Skills</Typography>
+    <Typography sx={{ color: 'white', fontSize: '50px',display:'flex',alignItems:'center',justifyContent:'center',fontFamily:'Montserrat',fontWeight:'700' }}>Skills</Typography>
 
     <main className="page-content" style={{display:'flex',flexDirection:isMobileView?"column":"row",alignItems:'center',justifyContent:'center',width:'100%'}}>
     <div className="card" style={{ backgroundImage:`url(/assets/frontend.webp)`,width:'360px',height:'200px', backgroundSize: 'cover', backgroundPosition: 'center' }}>

@@ -5,12 +5,11 @@ const HomeContact = () => {
   const theme=useTheme();
   const isMobileView=useMediaQuery(theme.breakpoints.down("md"))
   return (
-    <Box sx={{display:'flex',flexDirection:'column',marginTop:'80px'}}>
-     <Typography sx={{color:'white',fontSize:'50px',textAlign:'center'}}>Contact Me</Typography>
+    <Box sx={{display:'flex',flexDirection:'column',marginTop:'40px'}}>
      <Box sx={{ display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'space-evenly'}}>
-       <Typography sx={{color:'greenyellow',fontSize:'30px'}}>Want to work together?</Typography>
+       <Typography sx={{color:'greenyellow',fontSize:'33px'}}>Want to work together?</Typography>
 
-       <Typography sx={{color:'white',fontSize:'15px'}}>I'm open to internship positons and freelance work. Feel free to reach out for collaborations, get help with communities or just a friendly hello!</Typography>
+       <Typography sx={{color:'white',fontSize:'15px',textAlign:'center'}}>I'm open to internship positons and freelance work. Feel free to reach out for collaborations, get help with communities or just a friendly hello!</Typography>
 
        <Box sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-evenly', marginTop: '20px', marginBottom: '50px', gap: isMobileView ? "30px" : "100px" }}>
                     <a href="https://github.com/swapnil0000" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>

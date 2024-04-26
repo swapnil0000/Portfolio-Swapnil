@@ -122,8 +122,9 @@ const isMobileView=useMediaQuery(theme.breakpoints.down("md"))
           sx={{
             '& .MuiDrawer-paper': {
               width: '100vw', // Full width
-              height: '50vh', // Half of viewport height
+              height: '35vh', // Half of viewport height
               backgroundColor: '#181e24',
+              fontSize:'30px'
             },
           }}
         >
@@ -134,12 +135,17 @@ const isMobileView=useMediaQuery(theme.breakpoints.down("md"))
             onKeyDown={handleDrawerToggle}
           >
           <List sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-          {menuData.map((text) => (
-            <ListItem key={text.id} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%' }} onClick={() => navigate(text.path)}>
-              <ListItemText sx={{ color: 'white', fontSize: '24px' }} onClick={openSearch} primary={text.val} /> {/* Adjust the fontSize here */}
-            </ListItem>
-          ))}
-        </List>
+  {menuData.map((text) => (
+    <ListItem key={text.id} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%' }} onClick={() => navigate(text.path)}>
+      <ListItemText 
+        primary={text.val} 
+        primaryTypographyProps={{ sx: { color: 'white', fontWeight: '700', fontSize: '20px' } }} // Adjust the fontSize here
+        onClick={openSearch} 
+      />
+    </ListItem>
+  ))}
+</List>
+
         
           </Box>
         </Drawer>

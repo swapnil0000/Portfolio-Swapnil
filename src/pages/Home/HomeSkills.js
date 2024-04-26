@@ -10,7 +10,7 @@ const HomeSkills = () => {
   const navigate=useNavigate();
   return (
     <Box sx={{marginTop:'60px'}}>
-    <Typography sx={{ color: 'white', fontSize: '50px', textAlign: 'center' }}>Skills</Typography>
+    <Typography sx={{ color: 'white', fontSize: '50px', textAlign: 'center',fontFamily:'Montserrat',fontWeight:'700' }}>Skills</Typography>
 
     <main className="page-content" style={{display:'flex',flexDirection:isMobileView?"column":"row",alignItems:'center',justifyContent:'center'}}>
     <div className="card" style={{ backgroundImage: `url(/assets/frontend.webp)`,width:isMobileView?"300px":"360px",height:'200px', backgroundSize: 'cover', backgroundPosition: 'center' }}>

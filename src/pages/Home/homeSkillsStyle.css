@@ -120,7 +120,7 @@
   outline-offset: 3px;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (min-width: 100px) {
   .card:after {
     transform: translateY(0);
   }

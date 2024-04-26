@@ -27,7 +27,7 @@ const Frontend = () => {
     ]
   return (
     <Box sx={{marginTop:'60px'}}>
-     <Typography  sx={{ color: 'white', fontSize: '50px', textAlign: 'center' }}>Backend Skills</Typography>
+     <Typography  sx={{ color: 'white', fontSize: '40px', textAlign: 'center',fontFamily:'Montserrat',fontWeight:'700'  }}>Backend Skills</Typography>
     <Grid container>
     {data.map(item => (
       <Grid key={item.id} item xs={12} sm={6} md={6} lg={3} sx={{display:'flex',flexDirection:'column',alignItems:'center',marginTop:'10px'}}>

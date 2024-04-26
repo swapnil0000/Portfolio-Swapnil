@@ -13,7 +13,7 @@ const Projects = () => {
             description: "UPSC CSE Coaching Website",
             stack: "HTML, CSS, React, Js, MaterialUI, Aws Hosting, Nodejs, Expressjs",
             live: "Live Link",
-            livelink:'www.shashanksajwan.com'
+            livelink:'https://www.shashanksajwan.com/'
         },
         {
             name: "Apni Tapri",
@@ -41,8 +41,13 @@ const Projects = () => {
     ];
 
     const handleGithub = (url) => {
-        window.open(url, '_blank'); // Open link in a new tab
+        if (url.startsWith("http://") || url.startsWith("https://")) {
+            window.open(url, '_blank'); // Open external link in a new tab
+        } else {
+            window.location.href = url; // Navigate to relative URL within the current tab
+        }
     }
+    
 
     return (
         <Container sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', marginTop: '60px' }}>

@@ -25,11 +25,11 @@ const HomeAbout = () => {
     return (
         <Box sx={{animation: isVisible ? 'slidetoX 4s ease' : ''}} ref={ref}>
             <Box sx={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center'}}>
-                <Typography sx={{ color: 'white', fontSize: '53px', textAlign: 'center' }}>About Me</Typography>
+                <Typography sx={{ color: 'white', fontSize: '50px', textAlign: 'center',fontFamily:'Montserrat',fontWeight:'700' }}>About Me</Typography>
                 <Box sx={{ display: 'flex', flexDirection:isMobileView?"column":"row", gap: '30px' ,alignItems:'center',justifyContent:'center'}}>
                 <img style={{ width: '250px' }} src="/assets/aboutpage.webp" alt='logo' />
 
-                    <Typography sx={{ color: 'white', textAlign: 'justify', fontSize:isMobileView?"15px":"21.9px" }}>Hi there! I'm <span style={{ color: 'yellowgreen', fontSize:isMobileView?'22px':"28px" }}>Swapnil Srivastav</span>, a passionate Developer with a love for creativity and problem-solving. I thrive on challenges and enjoy turning ideas into reality. With a background in <span style={{ color: 'yellowgreen', fontSize:isMobileView?'22px':"28px" }}>MERN Developer</span> and 1 year of experience, I bring a unique blend of skills to the table. When I'm not coding/designing/building, you can find me exploring new technologies, reading, or spending time outdoors. Let's connect and create something amazing together!</Typography>
+                    <Typography sx={{ color: 'white', textAlign: 'justify', fontSize:isMobileView?"17px":"21.9px",hyphens:'auto' }}>Hello there! I'm <span style={{fontSize:isMobileView?"18px":"24px",color:'yellowgreen'}}>Swapnil Srivastav</span>, a passionate developer with a knack for creativity and problem-solving. I thrive on challenges and relish the process of turning ideas into reality. With a background in <span style={{fontSize:isMobileView?"18px":"24px",color:'yellowgreen'}}>MERN</span> development and one year of experience, I offer a unique blend of skills. When I'm not coding, designing, or building, you'll find me exploring new technologies, reading, or enjoying the outdoors. Let's connect and collaborate on something amazing together!</Typography>
                 </Box>
 
                 <Box sx={{ marginLeft: '0px', marginTop:'8px'}}>

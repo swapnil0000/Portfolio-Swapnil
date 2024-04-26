@@ -23,8 +23,8 @@ const HomeProject = () => {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '60px' }}>
-      <Typography sx={{ color: 'white', fontSize: '50px', textAlign: 'center' }}>Projects</Typography>
-      <Grid container spacing={3} sx={{ marginTop: '30px' }}>
+      <Typography sx={{ color: 'white', fontSize: '50px', textAlign: 'center' ,fontFamily:'Montserrat',fontWeight:'700'}}>Projects</Typography>
+      <Grid container spacing={3} sx={{marginTop:'5px' }}>
         {projects.map((project, index) => (
           <Grid key={index} item xs={12} lg={6}>
             <Paper
